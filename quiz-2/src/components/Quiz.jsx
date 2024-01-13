@@ -4,7 +4,7 @@ import questions from "./quizQuestion.json";
 
 export default class QuizComponent extends Component{
   constructor(props){
-    super(props);git 
+    super(props);
     this.state={
       questions:questions,
       currentQuestion:{},
