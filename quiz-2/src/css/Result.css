@@ -1,4 +1,4 @@
-.result{
+.resultpge{
     text-align: center;
   }
   
@@ -8,7 +8,7 @@
   .score{
     color:blue
   }
-  .score-section{
+  .scores{
     background-color: #f8f8f8; 
     border-left: 5px solid rgb(134, 134, 243);
     width: 40%;
@@ -16,7 +16,7 @@
     padding: 1.5rem 2rem;
   }
   
-  .flex{
+  .box{
     display: flex;
     justify-content:space-between;
     gap: 0rem;
@@ -30,14 +30,14 @@
     margin: 30px;
   }
   
-  .play{
+  .playagain{
     border-color: rgb(118, 118, 214);
     color: rgb(118, 118, 214);
     margin-right: 30px;
     width: 7%;
   }
   
-  .home{
+  .gohome{
     border-color: green;
     color:green;
     width: 7%;

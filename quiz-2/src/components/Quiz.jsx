@@ -67,7 +67,7 @@ export default class QuizComponent extends Component{
     const {currentQuestion} = this.state;
 
     return(
-      <div className="question">
+      <div id="questions">
         <h2>Question</h2>
 
         <div>
@@ -86,9 +86,9 @@ export default class QuizComponent extends Component{
         </div>
 
         <div className="button-container">
-          <button className="button previous" onClick={this.handlePrevButtonClick}>Previous</button>
-          <button className="button next" onClick={this.handleNextButtonClick}>Next</button>
-          <button className="button quit" onClick={this.handleQuitButtonClick}>Quit</button>
+          <button className="previous button" onClick={this.handlePrevButtonClick}>Previous</button>
+          <button className="next button" onClick={this.handleNextButtonClick}>Next</button>
+          <button className="quit button" onClick={this.handleQuitButtonClick}>Quit</button>
         </div>
 
 

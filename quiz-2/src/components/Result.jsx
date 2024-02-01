@@ -3,12 +3,12 @@ import "../css/Result.css"
 
 export default function Result(){
   return(
-    <div className="result">
+    <div className="resultpge">
       <h1>Result</h1>
-      <div className="score-section">
+      <div className="scores">
         <h3>You need more practice!</h3>
         <h1 className="score">Your score is 20%</h1>
-        <div className="flex">
+        <div className="box">
           <div className="details">
             <h5>Totol number of quesions</h5>
             <h5>Number of attempted questions</h5>
@@ -25,8 +25,8 @@ export default function Result(){
       </div>
 
       <div className="buttons">
-        <button className="play">Play Again</button>
-        <button className="home">Back to home</button>
+        <button className="playagain">Play Again</button>
+        <button className="gohome">Back to home</button>
       </div>
     </div>
   )
