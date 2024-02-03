@@ -1,8 +1,9 @@
 import React from "react";
-import "../css/Result.css"
+import { Link } from "react-router-dom";
+import "../css/Result.css";
 
-export default function Result(){
-  return(
+export default function Result() {
+  return (
     <div className="resultpge">
       <h1>Result</h1>
       <div className="scores">
@@ -10,7 +11,7 @@ export default function Result(){
         <h1 className="score">Your score is 20%</h1>
         <div className="box">
           <div className="details">
-            <h5>Totol number of quesions</h5>
+            <h5>Total number of questions</h5>
             <h5>Number of attempted questions</h5>
             <h5>Number of correct answers</h5>
             <h5>Number of wrong answers</h5>
@@ -25,9 +26,13 @@ export default function Result(){
       </div>
 
       <div className="buttons">
-        <button className="playagain">Play Again</button>
-        <button className="gohome">Back to home</button>
+        <Link to="/quiz">
+          <button className="playagain">Play Again</button>
+        </Link>
+        <Link to="/">
+          <button className="gohome">Back to home</button>
+        </Link>
       </div>
     </div>
-  )
+  );
 }

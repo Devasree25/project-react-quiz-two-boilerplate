@@ -1,16 +1,14 @@
-import { Component } from "react";
-// import Home from "./components/Home"
-import Quiz from "./components/Quiz"
-// import Result from "./components/Result"
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import AllRoutes from "./components/AllRoutes";
+import "./App.css";
 
-export default class App extends Component{
-  render(){
-    return(
-      <div>
-        {/* <Home/> */}
-        <Quiz/>
-        {/* <Result/> */}
-      </div>
-    );
-  };
+function App() {
+  return (
+    <Router>
+      <AllRoutes />
+    </Router>
+  );
 }
+
+export default App;

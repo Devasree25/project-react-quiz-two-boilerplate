@@ -1,11 +1,21 @@
 import React from "react";
-import "../css/Home.css"
+import { useNavigate } from "react-router-dom";
+import "../css/Home.css";
 
-export default function Home(){
-  return(
+export default function Home() {
+  const navigate = useNavigate();
+
+  const handlePlayClick = () => {
+    // Navigate to the quiz page
+    navigate("/quiz");
+  };
+
+  return (
     <div className="homepge">
-      <h2 className="home-title">Quiz App</h2>
-      <button className="home-button">Play</button>
+      <p className="title">Quiz App</p>
+      <button className="home-button" onClick={handlePlayClick}>
+        Play
+      </button>
     </div>
-  )
+  );
 }
